@@ -1,0 +1,47 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a Google Analytics item hit",
+  "self": {
+    "vendor": "com.google.analytics.measurement-protocol",
+    "name": "item",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+
+  "type": "object",
+  "properties": {
+    "hitType": {
+      "enum": [
+        "item"
+      ]
+    },
+    "transactionId": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "itemName": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "itemPrice": {
+      "type": "number",
+      "multipleOf": 0.01
+    },
+    "itemQuantity": {
+      "type": "integer"
+    },
+    "itemCode": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "itemCategory": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "currencyCode": {
+      "type": "string",
+      "maxLength": 10
+    }
+  },
+  "additionalProperties": false
+}
