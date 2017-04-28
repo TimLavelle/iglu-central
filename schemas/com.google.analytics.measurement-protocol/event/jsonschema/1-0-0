@@ -10,6 +10,12 @@
 
   "type": "object",
   "properties": {
+    "protocolVersion": {
+      "type": "string"
+    },
+    "trackingId": {
+      "type": "string"
+    },
     "hitType": {
       "enum": [
         "event"
@@ -33,7 +39,20 @@
     "eventValue": {
       "type": ["integer", "null"],
       "minimum": 0
+    },
+    "anonymizeIp": {
+      "type": ["boolean", "null"]
+    },
+    "dataSource": {
+      "type": ["string", "null"]
+    },
+    "queueTime": {
+      "type": ["integer", "null"]
+    },
+    "cacheBuster": {
+      "type": ["string", "null"]
     }
   },
+  "required": ["protocolVersion", "trackingId", "hitType", "eventCategory", "eventAction"],
   "additionalProperties": false
 }

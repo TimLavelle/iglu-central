@@ -10,6 +10,12 @@
 
   "type": "object",
   "properties": {
+    "protocolVersion": {
+      "type": "string"
+    },
+    "trackingId": {
+      "type": "string"
+    },
     "hitType": {
       "enum": [
         "pageview"
@@ -37,7 +43,20 @@
     "contentGroup1": {
       "type": ["string", "null"],
       "maxLength": 100
+    },
+    "anonymizeIp": {
+      "type": ["boolean", "null"]
+    },
+    "dataSource": {
+      "type": ["string", "null"]
+    },
+    "queueTime": {
+      "type": ["integer", "null"]
+    },
+    "cacheBuster": {
+      "type": ["string", "null"]
     }
   },
+  "required": ["protocolVersion", "trackingId", "hitType"],
   "additionalProperties": true
 }

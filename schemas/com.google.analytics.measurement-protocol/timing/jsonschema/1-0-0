@@ -10,6 +10,12 @@
 
 	"type": "object",
 	"properties": {
+    "protocolVersion": {
+      "type": "string"
+    },
+    "trackingId": {
+      "type": "string"
+    },
 		"hitType": {
 			"enum": [
         "timing"
@@ -56,7 +62,20 @@
     },
     "contentLoadTime": {
       "type": ["integer", "null"]
+    },
+    "anonymizeIp": {
+      "type": ["boolean", "null"]
+    },
+    "dataSource": {
+      "type": ["string", "null"]
+    },
+    "queueTime": {
+      "type": ["integer", "null"]
+    },
+    "cacheBuster": {
+      "type": ["string", "null"]
     }
   },
+  "required": ["protocolVersion", "trackingId", "hitType", "userTimingCategory", "userTimingVariableName", "userTimingTime"],
   "additionalProperties": false
 }
