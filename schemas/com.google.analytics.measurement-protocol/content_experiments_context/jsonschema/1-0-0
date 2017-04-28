@@ -1,0 +1,22 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a Google Analytics content experiments context",
+  "self": {
+    "vendor": "com.google.analytics.measurement-protocol",
+    "name": "content_experiments_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+
+  "type": "object",
+  "properties": {
+    "experimentId": {
+      "type": ["string", "null"],
+      "maxLength": 40
+    },
+    "experimentVariant": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": false
+}
