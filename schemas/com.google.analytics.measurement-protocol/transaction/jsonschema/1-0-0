@@ -41,6 +41,9 @@
     "currencyCode": {
       "type": ["string", "null"],
       "maxLength": 10
+    },
+    "couponCode": {
+      "type": ["string", "null"]
     }
   },
   "additionalProperties": false

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a Google Analytics enhanced e-commerce product action context",
+  "self": {
+    "vendor": "com.google.analytics.enhanced-ecommerce",
+    "name": "product_action_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+
+  "type": "object",
+  "properties": {
+    "productAction": {
+      "enum": [
+        "detail",
+        "click",
+        "add",
+        "remove",
+        "checkout",
+        "checkout_option",
+        "purchase",
+        "refund"
+      ]
+    },
+    "productActionList": {
+      "type": ["string", "null"]
+    },
+    "checkoutStep": {
+      "type": "integer"
+    },
+    "checkoutStepOption": {
+      "type": ["string", "null"]
+    }
+  },
+  "additionalProperties": false
+}
