@@ -1,27 +1,30 @@
 {
-	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-	"description": "Schema for a Google Analytics exception hit",
-	"self": {
-		"vendor": "com.google.analytics.measurement-protocol",
-		"name": "exception",
-		"format": "jsonschema",
-		"version": "1-0-0"
-	},
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a Google Analytics exception hit",
+  "self": {
+    "vendor": "com.google.analytics.measurement-protocol",
+    "name": "exception",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
 
-	"type": "object",
-	"properties": {
-		"hitType": {
-			"enum": [
+  "type": "object",
+  "properties": {
+    "hitType": {
+      "enum": [
         "exception"
       ]
-		},
-		"exceptionDescription": {
-			"type": "string",
-			"maxLength": 150
-		},
-		"isExceptionFatal": {
-			"type": "boolean"
-		}
-	},
-	"additionalProperties": false
+    },
+    "nonInteractionHit": {
+      "type": "boolean"
+    },
+    "exceptionDescription": {
+      "type": "string",
+      "maxLength": 150
+    },
+    "isExceptionFatal": {
+      "type": "boolean"
+    }
+  },
+  "additionalProperties": false
 }
