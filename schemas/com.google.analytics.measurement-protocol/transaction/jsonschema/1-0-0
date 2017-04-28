@@ -16,30 +16,30 @@
       ]
     },
     "nonInteractionHit": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "transactionId": {
       "type": "string",
       "maxLength": 500
     },
     "transactionAffiliation": {
-      "type": "string",
+      "type": ["string", "null"],
       "maxLength": 500
     },
     "transactionRevenue": {
-      "type": "number",
+      "type": ["number", "null"],
       "multipleOf": 0.01
     },
     "transactionShipping": {
-      "type": "number",
+      "type": ["number", "null"],
       "multipleOf": 0.01
     },
     "transactionTax": {
-      "type": "number",
+      "type": ["number", "null"],
       "multipleOf": 0.01
     },
     "currencyCode": {
-      "type": "string",
+      "type": ["string", "null"],
       "maxLength": 10
     }
   },

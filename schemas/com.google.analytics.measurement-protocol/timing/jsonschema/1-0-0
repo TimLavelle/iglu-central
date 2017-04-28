@@ -16,7 +16,7 @@
       ]
     },
     "nonInteractionHit": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "userTimingCategory": {
       "type": "string",
@@ -30,32 +30,32 @@
       "type": "integer"
     },
     "userTimingLabel": {
-      "type": "string",
+      "type": ["string", "null"],
       "maxLength": 500
     },
     "pageLoadTime": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "dnsTime": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "pageDownloadTime": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "redirectResponseTime": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "tcpConnectTime": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "serverResponseTime": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "domInteractiveTime": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "contentLoadTime": {
-      "type": "integer"
+      "type": ["integer", "null"]
     }
   },
   "additionalProperties": false

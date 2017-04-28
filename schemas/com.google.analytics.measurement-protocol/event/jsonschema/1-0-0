@@ -16,7 +16,7 @@
       ]
     },
     "nonInteractionHit": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "eventCategory": {
       "type": "string",
@@ -27,11 +27,11 @@
       "maxLength": 500
     },
     "eventLabel": {
-      "type": "string",
+      "type": ["string", "null"],
       "maxLength": 500
     },
     "eventValue": {
-      "type": "integer",
+      "type": ["integer", "null"],
       "minimum": 0
     }
   },

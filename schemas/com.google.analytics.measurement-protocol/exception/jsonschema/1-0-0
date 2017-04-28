@@ -16,14 +16,14 @@
       ]
     },
     "nonInteractionHit": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "exceptionDescription": {
-      "type": "string",
+      "type": ["string", "null"],
       "maxLength": 150
     },
     "isExceptionFatal": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     }
   },
   "additionalProperties": false

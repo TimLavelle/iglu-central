@@ -16,7 +16,7 @@
       ]
     },
     "nonInteractionHit": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "transactionId": {
       "type": "string",
@@ -27,18 +27,18 @@
       "maxLength": 500
     },
     "itemPrice": {
-      "type": "number",
+      "type": ["number", "null"],
       "multipleOf": 0.01
     },
     "itemQuantity": {
-      "type": "integer"
+      "type": ["integer", "null"]
     },
     "itemCode": {
-      "type": "string",
+      "type": ["string", "null"],
       "maxLength": 500
     },
     "itemCategory": {
-      "type": "string",
+      "type": ["string", "null"],
       "maxLength": 500
     },
     "currencyCode": {

@@ -1,0 +1,55 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a Google Analytics enhanced e-commerce product context. Additional properties are enabled so that indexed fields can be added without the need to change the schema.",
+  "self": {
+    "vendor": "com.google.analytics.measurement-protocol",
+    "name": "product_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+
+  "type": "object",
+  "properties": {
+    "productSKU": {
+      "type": ["string", "null"],
+      "maxLength": 500
+    },
+    "productName": {
+      "type": ["string", "null"],
+      "maxLength": 500
+    },
+    "productBrand": {
+      "type": ["string", "null"],
+      "maxLength": 500
+    },
+    "productCategory": {
+      "type": ["string", "null"],
+      "maxLength": 500
+    },
+    "productPrice": {
+      "type": ["number", "null"],
+      "multipleOf": 0.01
+    },
+    "productQuantity": {
+      "type": ["integer", "null"]
+    },
+    "productCouponCode": {
+      "type": ["string", "null"],
+      "maxLength": 500
+    },
+    "productPosition": {
+      "type": ["integer", "null"]
+    },
+    "productCustomDimension1": {
+      "type": ["string", "null"]
+    },
+    "productCustomMetric1": {
+      "type": ["integer", "null"]
+    },
+    "currencyCode": {
+      "type": ["string", "null"],
+      "maxLength": 10
+    }
+  },
+  "additionalProperties": true
+}

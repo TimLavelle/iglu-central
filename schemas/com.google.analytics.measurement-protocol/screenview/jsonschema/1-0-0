@@ -1,6 +1,6 @@
 {
   "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-  "description": "Schema for a Google Analytics screenview hit. Additional properties are enabled so that more content group fields can be added without the need to change the schema. GA allows up to 10 content groups per hit.",
+  "description": "Schema for a Google Analytics screenview hit. Additional properties are enabled so that indexed fields can be added without the need to change the schema.",
   "self": {
     "vendor": "com.google.analytics.measurement-protocol",
     "name": "screenview",
@@ -16,14 +16,14 @@
       ]
     },
     "nonInteractionHit": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "screenName": {
       "type": "string",
       "maxLength": 2048
     },
     "contentGroup1": {
-      "type": "string",
+      "type": ["string", "null"],
       "maxLength": 100
     }
   },

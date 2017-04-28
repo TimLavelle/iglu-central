@@ -16,7 +16,7 @@
       ]
     },
     "nonInteractionHit": {
-      "type": "boolean"
+      "type": ["boolean", "null"]
     },
     "socialNetwork": {
       "type": "string",
@@ -27,7 +27,7 @@
       "maxLength": 50
     },
     "socialActionTarget": {
-      "type": "string",
+      "type": ["string", "null"],
       "maxLength": 2048
     }
   },
