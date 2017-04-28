@@ -15,6 +15,9 @@
         "transaction"
       ]
     },
+    "nonInteractionHit": {
+      "type": "boolean"
+    },
     "transactionId": {
       "type": "string",
       "maxLength": 500
