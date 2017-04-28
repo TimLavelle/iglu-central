@@ -1,0 +1,32 @@
+{
+	"$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+	"description": "Schema for a Google Analytics social hit",
+	"self": {
+		"vendor": "com.google.analytics.measurement-protocol",
+		"name": "social",
+		"format": "jsonschema",
+		"version": "1-0-0"
+	},
+
+	"type": "object",
+	"properties": {
+		"hitType": {
+			"enum": [
+        "social"
+      ]
+		},
+		"socialNetwork": {
+			"type": "string",
+			"maxLength": 50
+		},
+		"socialAction": {
+			"type": "string",
+      "maxLength": 50
+		},
+		"socialActionTarget": {
+			"type": "string",
+			"maxLength": 2048
+		}
+	},
+	"additionalProperties": false
+}
