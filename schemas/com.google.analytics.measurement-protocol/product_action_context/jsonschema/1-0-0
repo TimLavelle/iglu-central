@@ -19,7 +19,8 @@
         "checkout",
         "checkout_option",
         "purchase",
-        "refund"
+        "refund",
+        "null"
       ]
     },
     "productActionList": {
