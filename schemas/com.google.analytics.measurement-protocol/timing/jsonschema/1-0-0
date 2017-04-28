@@ -15,6 +15,9 @@
         "timing"
       ]
     },
+    "nonInteractionHit": {
+      "type": "boolean"
+    },
     "userTimingCategory": {
       "type": "string",
       "maxLength": 150
