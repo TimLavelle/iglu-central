@@ -1,6 +1,6 @@
 {
   "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-  "description": "Schema for a Google Analytics screenview hit. Additional properties are enabled so that indexed fields can be added without the need to change the schema.",
+  "description": "Schema for a Google Analytics screenview hit",
   "self": {
     "vendor": "com.google.analytics.measurement-protocol",
     "name": "screenview",
@@ -28,10 +28,6 @@
       "type": "string",
       "maxLength": 2048
     },
-    "contentGroup1": {
-      "type": ["string", "null"],
-      "maxLength": 100
-    },
     "anonymizeIp": {
       "type": ["boolean", "null"]
     },
@@ -46,5 +42,5 @@
     }
   },
   "required": ["protocolVersion", "trackingId", "hitType", "screenName"],
-  "additionalProperties": true
+  "additionalProperties": false
 }

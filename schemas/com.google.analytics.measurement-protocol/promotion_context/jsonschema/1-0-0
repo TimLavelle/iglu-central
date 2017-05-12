@@ -17,6 +17,11 @@
         "null"
       ]
     },
+    "promotionIndex": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 200
+    },
     "promotionId": {
       "type": ["string", "null"]
     },

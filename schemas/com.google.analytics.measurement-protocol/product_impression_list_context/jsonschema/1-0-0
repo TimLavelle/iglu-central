@@ -1,0 +1,31 @@
+{
+  "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
+  "description": "Schema for a Google Analytics enhanced e-commerce impression list context",
+  "self": {
+    "vendor": "com.google.analytics.measurement-protocol",
+    "name": "impression_list_context",
+    "format": "jsonschema",
+    "version": "1-0-0"
+  },
+
+  "type": "object",
+  "properties": {
+    "productImpressionListIndex":{
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 200
+    },
+    "productImpressionListName": {
+      "type": ["string", "null"]
+    },
+    "productIndex": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 200
+    },
+    "productImpressionPosition": {
+      "type": ["integer", "null"]
+    }
+  },
+  "additionalProperties": false
+}

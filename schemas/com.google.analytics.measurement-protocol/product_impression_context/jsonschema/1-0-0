@@ -1,6 +1,6 @@
 {
   "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-  "description": "Schema for a Google Analytics enhanced e-commerce product impression context. Additional properties are enabled so that indexed fields can be added without the need to change the schema.",
+  "description": "Schema for a Google Analytics enhanced e-commerce product impression context",
   "self": {
     "vendor": "com.google.analytics.measurement-protocol",
     "name": "product_impression_context",
@@ -10,6 +10,11 @@
 
   "type": "object",
   "properties": {
+    "productIndex": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 200
+    },
     "productImpressionSKU": {
       "type": ["string", "null"]
     },
@@ -29,22 +34,10 @@
     "productImpressionVariant": {
       "type": ["string", "null"]
     },
-    "productImpressionListName1": {
-      "type": ["string", "null"]
-    },
-    "productImpressionPositionInListName1": {
-      "type": ["integer", "null"]
-    },
-    "productImpressionCustomDimension1": {
-      "type": ["string", "null"]
-    },
-    "productImpressionCustomMetric1": {
-      "type": ["integer", "null"]
-    },
     "currencyCode": {
       "type": ["string", "null"],
       "maxLength": 10
     }
   },
-  "additionalProperties": true
+  "additionalProperties": false
 }
