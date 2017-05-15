@@ -31,6 +31,10 @@
       "type": ["string", "null"],
       "maxLength": 500
     },
+    "productVariant": {
+      "type": ["string", "null"],
+      "maxLength": 500
+    },
     "productPrice": {
       "type": ["number", "null"],
       "multipleOf": 0.01
