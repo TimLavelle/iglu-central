@@ -16,11 +16,6 @@
     "trackingId": {
       "type": "string"
     },
-    "hitType": {
-      "enum": [
-      "social"
-      ]
-    },
     "nonInteractionHit": {
       "type": ["boolean", "null"]
     },
@@ -49,6 +44,6 @@
       "type": ["string", "null"]
     }
   },
-  "required": ["protocolVersion", "trackingId", "hitType", "socialNetwork", "socialAction"],
+  "required": ["protocolVersion", "trackingId", "socialNetwork", "socialAction"],
   "additionalProperties": false
 }
