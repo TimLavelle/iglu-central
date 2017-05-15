@@ -10,32 +10,11 @@
 
   "type": "object",
   "properties": {
-    "protocolVersion": {
-      "type": "string"
-    },
-    "trackingId": {
-      "type": "string"
-    },
-    "nonInteractionHit": {
-      "type": ["boolean", "null"]
-    },
     "screenName": {
       "type": "string",
       "maxLength": 2048
-    },
-    "anonymizeIp": {
-      "type": ["boolean", "null"]
-    },
-    "dataSource": {
-      "type": ["string", "null"]
-    },
-    "queueTime": {
-      "type": ["integer", "null"]
-    },
-    "cacheBuster": {
-      "type": ["string", "null"]
     }
   },
-  "required": ["protocolVersion", "trackingId", "screenName"],
+  "required": ["screenName"],
   "additionalProperties": false
 }
