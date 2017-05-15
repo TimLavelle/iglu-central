@@ -1,9 +1,9 @@
 {
   "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-  "description": "Schema for a Google Analytics traffic sources context",
+  "description": "Schema for a Google Analytics traffic sources entity",
   "self": {
     "vendor": "com.google.analytics.measurement-protocol",
-    "name": "traffic_sources_context",
+    "name": "traffic_sources",
     "format": "jsonschema",
     "version": "1-0-0"
   },
