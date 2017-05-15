@@ -16,11 +16,6 @@
     "trackingId": {
       "type": "string"
     },
-		"hitType": {
-			"enum": [
-        "timing"
-      ]
-    },
     "nonInteractionHit": {
       "type": ["boolean", "null"]
     },
@@ -76,6 +71,6 @@
       "type": ["string", "null"]
     }
   },
-  "required": ["protocolVersion", "trackingId", "hitType", "userTimingCategory", "userTimingVariableName", "userTimingTime"],
+  "required": ["protocolVersion", "trackingId", "userTimingCategory", "userTimingVariableName", "userTimingTime"],
   "additionalProperties": false
 }
