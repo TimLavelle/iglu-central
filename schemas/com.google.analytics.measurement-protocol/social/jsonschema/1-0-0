@@ -10,15 +10,6 @@
 
   "type": "object",
   "properties": {
-    "protocolVersion": {
-      "type": "string"
-    },
-    "trackingId": {
-      "type": "string"
-    },
-    "nonInteractionHit": {
-      "type": ["boolean", "null"]
-    },
     "socialNetwork": {
       "type": "string",
       "maxLength": 50
@@ -30,20 +21,8 @@
     "socialActionTarget": {
       "type": ["string", "null"],
       "maxLength": 2048
-    },
-    "anonymizeIp": {
-      "type": ["boolean", "null"]
-    },
-    "dataSource": {
-      "type": ["string", "null"]
-    },
-    "queueTime": {
-      "type": ["integer", "null"]
-    },
-    "cacheBuster": {
-      "type": ["string", "null"]
     }
   },
-  "required": ["protocolVersion", "trackingId", "socialNetwork", "socialAction"],
+  "required": ["socialNetwork", "socialAction"],
   "additionalProperties": false
 }
