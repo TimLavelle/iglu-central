@@ -10,15 +10,6 @@
 
   "type": "object",
   "properties": {
-    "protocolVersion": {
-      "type": "string"
-    },
-    "trackingId": {
-      "type": "string"
-    },
-    "nonInteractionHit": {
-      "type": ["boolean", "null"]
-    },
     "transactionId": {
       "type": "string",
       "maxLength": 500
@@ -45,20 +36,8 @@
     "currencyCode": {
       "type": ["string", "null"]
       "maxLength": 10
-    },
-    "anonymizeIp": {
-      "type": ["boolean", "null"]
-    },
-    "dataSource": {
-      "type": ["string", "null"]
-    },
-    "queueTime": {
-      "type": ["integer", "null"]
-    },
-    "cacheBuster": {
-      "type": ["string", "null"]
     }
   },
-  "required": ["protocolVersion", "trackingId", "transactionId", "itemName"],
+  "required": ["transactionId", "itemName"],
   "additionalProperties": false
 }
