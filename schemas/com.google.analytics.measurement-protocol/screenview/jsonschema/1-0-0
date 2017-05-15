@@ -16,11 +16,6 @@
     "trackingId": {
       "type": "string"
     },
-    "hitType": {
-      "enum": [
-        "screenview"
-      ]
-    },
     "nonInteractionHit": {
       "type": ["boolean", "null"]
     },
@@ -41,6 +36,6 @@
       "type": ["string", "null"]
     }
   },
-  "required": ["protocolVersion", "trackingId", "hitType", "screenName"],
+  "required": ["protocolVersion", "trackingId", "screenName"],
   "additionalProperties": false
 }
