@@ -10,15 +10,6 @@
 
   "type": "object",
   "properties": {
-    "protocolVersion": {
-      "type": "string"
-    },
-    "trackingId": {
-      "type": "string"
-    },
-    "nonInteractionHit": {
-      "type": ["boolean", "null"]
-    },
     "eventCategory": {
       "type": "string",
       "maxLength": 150
@@ -34,20 +25,8 @@
     "eventValue": {
       "type": ["integer", "null"],
       "minimum": 0
-    },
-    "anonymizeIp": {
-      "type": ["boolean", "null"]
-    },
-    "dataSource": {
-      "type": ["string", "null"]
-    },
-    "queueTime": {
-      "type": ["integer", "null"]
-    },
-    "cacheBuster": {
-      "type": ["string", "null"]
     }
   },
-  "required": ["protocolVersion", "trackingId", "eventCategory", "eventAction"],
+  "required": ["eventCategory", "eventAction"],
   "additionalProperties": false
 }
