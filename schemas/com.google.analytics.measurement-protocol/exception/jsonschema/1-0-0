@@ -16,11 +16,6 @@
     "trackingId": {
       "type": "string"
     },
-    "hitType": {
-      "enum": [
-        "exception"
-      ]
-    },
     "nonInteractionHit": {
       "type": ["boolean", "null"]
     },
@@ -44,6 +39,6 @@
       "type": ["string", "null"]
     }
   },
-  "required": ["protocolVersion", "trackingId", "hitType"],
+  "required": ["protocolVersion", "trackingId"],
   "additionalProperties": false
 }
