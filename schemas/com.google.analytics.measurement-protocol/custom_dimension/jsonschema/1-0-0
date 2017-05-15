@@ -1,9 +1,9 @@
 {
   "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-  "description": "Schema for a Google Analytics custom dimension context",
+  "description": "Schema for a Google Analytics custom dimension entity",
   "self": {
     "vendor": "com.google.analytics.measurement-protocol",
-    "name": "custom_dimension_context",
+    "name": "custom_dimension",
     "format": "jsonschema",
     "version": "1-0-0"
   },
