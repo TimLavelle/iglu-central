@@ -1,9 +1,9 @@
 {
   "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-  "description": "Schema for a Google Analytics system info context",
+  "description": "Schema for a Google Analytics system info entity",
   "self": {
     "vendor": "com.google.analytics.measurement-protocol",
-    "name": "system_info_context",
+    "name": "system_info",
     "format": "jsonschema",
     "version": "1-0-0"
   },
