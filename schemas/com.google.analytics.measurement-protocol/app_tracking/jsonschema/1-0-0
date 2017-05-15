@@ -1,9 +1,9 @@
 {
   "$schema": "http://iglucentral.com/schemas/com.snowplowanalytics.self-desc/schema/jsonschema/1-0-0#",
-  "description": "Schema for a Google Analytics app tracking context",
+  "description": "Schema for a Google Analytics app tracking entity",
   "self": {
     "vendor": "com.google.analytics.measurement-protocol",
-    "name": "app_tracking_context",
+    "name": "app_tracking",
     "format": "jsonschema",
     "version": "1-0-0"
   },
