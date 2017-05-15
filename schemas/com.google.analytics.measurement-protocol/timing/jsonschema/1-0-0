@@ -10,15 +10,6 @@
 
 	"type": "object",
 	"properties": {
-    "protocolVersion": {
-      "type": "string"
-    },
-    "trackingId": {
-      "type": "string"
-    },
-    "nonInteractionHit": {
-      "type": ["boolean", "null"]
-    },
     "userTimingCategory": {
       "type": "string",
       "maxLength": 150
@@ -57,20 +48,8 @@
     },
     "contentLoadTime": {
       "type": ["integer", "null"]
-    },
-    "anonymizeIp": {
-      "type": ["boolean", "null"]
-    },
-    "dataSource": {
-      "type": ["string", "null"]
-    },
-    "queueTime": {
-      "type": ["integer", "null"]
-    },
-    "cacheBuster": {
-      "type": ["string", "null"]
     }
   },
-  "required": ["protocolVersion", "trackingId", "userTimingCategory", "userTimingVariableName", "userTimingTime"],
+  "required": ["userTimingCategory", "userTimingVariableName", "userTimingTime"],
   "additionalProperties": false
 }
