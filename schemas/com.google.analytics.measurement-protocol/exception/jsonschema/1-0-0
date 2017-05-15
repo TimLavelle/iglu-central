@@ -10,35 +10,13 @@
 
   "type": "object",
   "properties": {
-    "protocolVersion": {
-      "type": "string"
-    },
-    "trackingId": {
-      "type": "string"
-    },
-    "nonInteractionHit": {
-      "type": ["boolean", "null"]
-    },
     "exceptionDescription": {
       "type": ["string", "null"],
       "maxLength": 150
     },
     "isExceptionFatal": {
       "type": ["boolean", "null"]
-    },
-    "anonymizeIp": {
-      "type": ["boolean", "null"]
-    },
-    "dataSource": {
-      "type": ["string", "null"]
-    },
-    "queueTime": {
-      "type": ["integer", "null"]
-    },
-    "cacheBuster": {
-      "type": ["string", "null"]
     }
   },
-  "required": ["protocolVersion", "trackingId"],
   "additionalProperties": false
 }
