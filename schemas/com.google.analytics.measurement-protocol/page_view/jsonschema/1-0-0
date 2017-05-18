@@ -10,6 +10,11 @@
 
   "type": "object",
   "properties": {
+    "hitType": {
+      "enum": [
+        "pageview"
+      ]
+    },
     "documentLocationURL": {
       "type": ["string", "null"]
       "maxLength": 2048
@@ -27,5 +32,6 @@
       "maxLength": 1500
     }
   },
+  "required": ["hitType"],
   "additionalProperties": false
 }
