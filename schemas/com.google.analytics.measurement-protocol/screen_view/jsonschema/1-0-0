@@ -10,11 +10,16 @@
 
   "type": "object",
   "properties": {
+    "hitType": {
+      "enum": [
+        "screenview"
+      ]
+    },
     "screenName": {
       "type": "string",
       "maxLength": 2048
     }
   },
-  "required": ["screenName"],
+  "required": ["hitType", "screenName"],
   "additionalProperties": false
 }
