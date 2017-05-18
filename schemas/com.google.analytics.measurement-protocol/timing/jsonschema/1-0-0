@@ -10,6 +10,11 @@
 
 	"type": "object",
 	"properties": {
+    "hitType": {
+      "enum": [
+        "timing"
+      ]
+    },
     "userTimingCategory": {
       "type": "string",
       "maxLength": 150
@@ -50,6 +55,6 @@
       "type": ["integer", "null"]
     }
   },
-  "required": ["userTimingCategory", "userTimingVariableName", "userTimingTime"],
+  "required": ["hitType", "userTimingCategory", "userTimingVariableName", "userTimingTime"],
   "additionalProperties": false
 }
