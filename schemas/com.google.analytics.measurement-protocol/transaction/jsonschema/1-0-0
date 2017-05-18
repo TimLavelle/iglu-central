@@ -10,6 +10,11 @@
 
   "type": "object",
   "properties": {
+    "hitType": {
+      "enum": [
+        "transaction"
+      ]
+    },
     "transactionId": {
       "type": "string",
       "maxLength": 500
@@ -38,6 +43,6 @@
       "type": ["string", "null"]
     }
   },
-  "required": ["transactionId"],
+  "required": ["hitType", "transactionId"],
   "additionalProperties": false
 }
