@@ -10,6 +10,11 @@
 
   "type": "object",
   "properties": {
+    "hitType": {
+      "enum": [
+        "social"
+      ]
+    },
     "socialNetwork": {
       "type": "string",
       "maxLength": 50
@@ -23,6 +28,6 @@
       "maxLength": 2048
     }
   },
-  "required": ["socialNetwork", "socialAction"],
+  "required": ["hitType", "socialNetwork", "socialAction"],
   "additionalProperties": false
 }
