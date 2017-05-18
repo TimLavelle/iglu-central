@@ -10,6 +10,11 @@
 
   "type": "object",
   "properties": {
+    "hitType": {
+      "enum": [
+        "event"
+      ]
+    },
     "eventCategory": {
       "type": "string",
       "maxLength": 150
@@ -27,6 +32,6 @@
       "minimum": 0
     }
   },
-  "required": ["eventCategory", "eventAction"],
+  "required": ["hitType", "eventCategory", "eventAction"],
   "additionalProperties": false
 }
