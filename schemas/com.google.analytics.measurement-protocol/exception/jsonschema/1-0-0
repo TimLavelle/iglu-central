@@ -10,6 +10,11 @@
 
   "type": "object",
   "properties": {
+    "hitType": {
+      "enum": [
+        "exception"
+      ]
+    },
     "exceptionDescription": {
       "type": ["string", "null"],
       "maxLength": 150
@@ -18,5 +23,6 @@
       "type": ["boolean", "null"]
     }
   },
+  "required": ["hitType"],
   "additionalProperties": false
 }
